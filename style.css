@@ -1,5 +1,20 @@
-.tempDate {
+body {
 
-    width: 10%;
+    background-image: linear-gradient(to bottom left, #00bcf4, #00a9f1, #119fea);
+}
 
+
+body.sunny {
+
+    background-image: linear-gradient(to bottom left, #fafa6e, #cdef72, #90db7e)
+}
+
+body.cloudy {
+
+    background-image: linear-gradient(to bottom left, #6a747e, #4a5a68, #96999c)
+}
+
+body.rainy {
+
+    background-image: linear-gradient(to bottom left, #9a9d9e, #4d4f4e)
 }

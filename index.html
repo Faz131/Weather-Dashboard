@@ -18,19 +18,19 @@
         <h1 class="h1 w-100">Weather Dashboard</h1>
     </div>
 
-    <div class="row search">
+    <div class="rowsearch">
 
 
-        <div class="col-12 border border-2 px-2 w-100">
-            <div id="cityEL" class="col-12 row px-4"></div>
-            <div id="tempEL" class="col-12 row px-4"></div>
-            <div id="windEL" class="col-12 row px-4"></div>
-            <div id="humidityEL" class="col-12 row px-4"></div>
-
-            <div class="row w-50" id="5-day-forecast">
-                <h2>5 Day Forcast:</h2>
-            </div>
-            <!-- <div class="row w-25 mw-50">
+        <div class="weather col-12 border border-2 px-2 w-100">
+            <div id="description"></div>
+            <div id="tempEL"></div>
+            <div id="cityEL"></div>
+        </div>
+    </div>
+    <div class="row w-50" id="5-day-forecast">
+        <h2>5 Day Forcast:</h2>
+    </div>
+    <!-- <div class="row w-25 mw-50">
                 <div class="col-12 col-md-6 col-3 bg-secondary px-3 m-3 w-50">
                     <p>temp</p>
                     <p>date</p>
@@ -52,35 +52,35 @@
                     <p>date</p>
                 </div>
             </div> -->
-            <div class="row">
-                <div class="tempDate col row-col bg-secondary px-3 m-3 w-auto">
-                    <p>temp</p>
-                    <p>date</p>
-                </div>
-                <div class="tempDate col row-col bg-secondary px-3 m-3 w-auto">
-                    <p>temp</p>
-                    <p>date</p>
-                </div>
-                <div class="tempDate col row-col bg-secondary px-3 m-3 w-25">
-                    <p>temp</p>
-                    <p>date</p>
-                </div>
-                <div class="tempDate col row-col bg-secondary px-3 m-3 w-25">
-                    <p>temp</p>
-                    <p>date</p>
-
-                </div>
-                <div class="tempDate col row-col bg-secondary px-3 m-3 w-25">
-                    <p>temp</p>
-                    <p>date</p>
-                </div>
-
-            </div>
+    <div class="row">
+        <div class="tempDate1 col row-col bg-secondary px-3 m-3 w-auto">
+            <p>temp</p>
+            <p>date</p>
+        </div>
+        <div class="tempDate2 col row-col bg-secondary px-3 m-3 w-auto">
+            <p>temp</p>
+            <p>date</p>
+        </div>
+        <div class="tempDate3 col row-col bg-secondary px-3 m-3 w-25">
+            <p>temp</p>
+            <p>date</p>
+        </div>
+        <div class="tempDate4 col row-col bg-secondary px-3 m-3 w-25">
+            <p>temp</p>
+            <p>date</p>
 
         </div>
-
+        <div class="tempDate5 col row-col bg-secondary px-3 m-3 w-25">
+            <p>temp</p>
+            <p>date</p>
+        </div>
 
     </div>
+
+
+
+
+
     <div>
         <h2>Search for a City:</h2>
         <form class="input-group-text h-25 w-25">
@@ -94,7 +94,7 @@
 
     <span id="responseText"></span>
 
-    <script src="./script.js"></script>
+    <script src="jscopy.js"></script>
 
 </body>
 
