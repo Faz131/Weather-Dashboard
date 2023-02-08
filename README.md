@@ -8,7 +8,7 @@ A simple weather website that in its current state will provide realtime weather
 ## Usaage 
 Provides simple weather satus
 
-![Images of the deployed site](/./Weather-Dashboard/Assets/Capture.PNG))
+![Images of the deployed site](/./Weather-Dashboard/Assets/Capture.PNG)
 
 
 # Deployed Site
