@@ -30,6 +30,11 @@ function displayWeather(d) {
     document.getElementById('description').innerHTML = d.weather[0].description;
     document.getElementById('tempEL').innerHTML = fahrenheit + '&deg;';
     document.getElementById('cityEL').innerHTML = d.name;
+    var newHumid = $('<p>').text('Humidity ' + d.main.humidity + '%');
+    $('.weather').append(newHumid)
+
+    var newWind = $('<p>').text('Wind Speed ' + d.wind.speed + 'MPH');
+    $('.weather').append(newWind)
 
 
 
