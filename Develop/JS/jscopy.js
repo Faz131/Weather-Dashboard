@@ -1,6 +1,7 @@
-
+var searchEl = document.getElementById('search-input');
 
 function getWeather(cityID) {
+
 
     var key = '68fb699c2ddc146cb7053a0a93b881bd'
 
@@ -40,7 +41,7 @@ function displayWeather(d) {
 
 }
 
-function weatherForecast(cityID) {
+function weatherForecast() {
 
 }
 
@@ -60,35 +61,40 @@ fetch(url)
 
     .catch(console.err)
 
-// var forecastkey = '68fb699c2ddc146cb7053a0a93b881bd'
-// var url = 'http://api.openweathermap.org/data/2.5/forecast?id=5318313&appid=' + forecastkey;
-// fetch(url)
-//     .then(response => response.json())
-//     .then(data => {
-//         var iconCode = data.weather[0].icon;
-//         // Use the iconCode to fetch the icon
-//     })
-//     .catch(error => {
-//         // Create a new image element
-//         var iconCode = document.createElement("img");
-
-//         // Set the source URL of the icon
-//         iconCode.src = "http://openweathermap.org/img/wn/" + iconCode + "@2x.png";
-
-//         // Set the alt text for the icon
-//         iconCode.alt = "Weather icon";
-
-//         // Append the icon to the HTML DOM
-//         document.body.appendChild(iconCode);
-//     });
-
-function displayForecast(f) {
 
 
-    var weatherRow = document.getElementById('weatherRow');
-    weatherRow.innerHTML = resp.daily.map(day => {
-        return '<p>Day</p>';
-    })
-        .join('');
-}
+
+$('#searchButton').click(function () {
+    var saveSearch = $('#search-input').val();
+    // console.log('City', saveSearch);
+
+
+    localStorage.setItem('City', JSON.stringify(saveSearch));
+
+});
+document.getElementById('search-input').innerHTML
+    = JSON.parse(localStorage.getItem('City'));
+
+
+// function citySearch(query) {
+//     var searchCity = searchEl.value;
+//     console.log(searchCity);
+
+//     var key = '68fb699c2ddc146cb7053a0a93b881bd'
+//     var requestUrl = `https://api.openmap.org/search?q=${query}&appid=${key}`;
+
+//     fetch(requestUrl)
+//         .then(function (resp) {
+
+//             return resp.json();
+//         })
+//         .then(function (resp) {
+//             // console.log(resp)
+
+
+//         })
+
+// }
+
+// searchButton.addEventListener('click', citySearch);
 
